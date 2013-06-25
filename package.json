@@ -1,0 +1,44 @@
+{
+  "name": "grunt-kendo-lint",
+  "description": "Grunt plugin for the kendo-lint static analysis tool.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kendo-labs//grunt-kendo-lint",
+  "author": {
+    "name": "Brandon Satrom",
+    "email": "bsatrom@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kendo-labs/grunt-kendo-lint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kendo-labs//grunt-kendo-lint/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "https://github.com/kendo-labs//grunt-kendo-lint/blob/master/README.ms"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "linter",
+    "development"
+  ]
+}

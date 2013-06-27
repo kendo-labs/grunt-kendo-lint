@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         kendoLint.lintHTMLFile(filepath, function(error, results) {
           if (results.length > 0) {
             results.forEach(function (result) {
-              grunt.log.error(result.filename + " [L" + result.line + ",C" + result.col + "]: " + result.message);
+              grunt.log.error(result.filename + ": " + result.message);
               errorCount++;
             });             
           }

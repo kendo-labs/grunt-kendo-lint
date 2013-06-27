@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "kendo-lint": "~0.0.6",
+    "kendo-lint": "~0.0.7",
     "grunt-lib-contrib": "~0.6.0"
   },
   "devDependencies": {

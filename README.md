@@ -26,7 +26,7 @@ In your project's Gruntfile, add a section named `kendo_lint` to the data object
 grunt.initConfig({
   kendo_lint: {
       files: ['src/**/*.js']
-    }
+  }
 })
 ```
 

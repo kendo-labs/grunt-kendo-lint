@@ -9,7 +9,7 @@
 'use strict';
 
 module.exports = function(grunt) {
- var path = require('path');
+  var path = require('path');
   var kendoLint = require('kendo-lint');
 
   grunt.registerMultiTask('kendo_lint', 'Validate Kendo UI configuration with kendo-lint.', function() {
@@ -18,6 +18,13 @@ module.exports = function(grunt) {
     var files = this.filesSrc,
       errorCount = 0,
       curr = 0;
+
+    // Merge task-specific and/or target-specific options with these defaults.
+    var options = this.options({
+      force: false
+    });
+
+    var force = options.force;
 
     files.forEach(function(filepath) {
       var extArr = path.extname(filepath||'').split('.');
@@ -48,14 +55,19 @@ module.exports = function(grunt) {
       }
 
       function pending() {
+        var failed = 0;
         curr++;
         if (curr === files.length) {
           // Fail task if errors were logged.
-          if (errorCount) { return false; }
+          if (errorCount) { 
+            failed = force;
+          }
 
           // Otherwise, print a success message.
           grunt.log.ok(files.length + ' file' + (files.length === 1 ? '' : 's') + ' lint free.');
-          done();
+          
+          // either we failed or succeeded
+          done(failed);
         }
       }  
     });

@@ -1,7 +1,7 @@
 {
   "name": "grunt-kendo-lint",
   "description": "Grunt plugin for the kendo-lint static analysis tool.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/kendo-labs//grunt-kendo-lint",
   "author": {
     "name": "Brandon Satrom",
@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "kendo-lint": "~0.0.7",
+    "kendo-lint": "~0.1.0",
     "grunt-lib-contrib": "~0.6.0"
   },
   "devDependencies": {

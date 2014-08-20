@@ -2,6 +2,9 @@
 
 > Grunt plugin for the kendo-lint static analysis tool.
 
+# Note
+Kendo UI Labs projects are experimental and largely built and supported by the community.  As such Telerik does not provide official support for any of the Kendo UI Labs projects via Telerik support agreements.  We do encourage you to open an issue or visit [Stack Overflow](http://www.stackoverflow.com).
+
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
 
